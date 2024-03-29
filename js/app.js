@@ -10,3 +10,11 @@ divTrigger.addEventListener('click', () =>{
     }
   }, 250);
 })
+
+document.addEventListener('click', (e) =>{
+  const isClosest = e.target.closest(divtoShow);
+  if(!isClosest && divPopup.classList.contains('show')){
+    divPopup.classList.remove('show');
+    document.body.classList.remove('menu-visible')
+  }
+})
