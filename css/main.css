@@ -233,6 +233,24 @@ main > div{
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+.slider, .slider .main{
+  position: relative;
+  width: 100%;
+}
+.slider .image{
+  max-width: 450px;
+  height: auto;
+  margin: 3em auto 1em;
+}
+.slider .tags{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  text-transform: uppercase;
+  margin: 4em auto;
+}
 /*=============================MEDIA=================================*/
 @media screen and (min-width:768px) {
   .mobile-only{
