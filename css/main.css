@@ -215,6 +215,24 @@ header .s-trigger i.ri-close-line, .showsearch header .s-trigger i.ri-search-lin
 .showsearch header .s-trigger:hover{
   background-color: #ff25254a;
 }
+/*===========================SLIDER===================================*/
+main > div{
+  position: relative;
+  padding: 5em 0;
+}
+.hero{
+  color: var(--white-color);
+  text-align: center;
+}
+.hero h1{
+  font-size: clamp(1.5em, -0.875em + 8.333vw, 3.5em);
+  margin-bottom: 0.5em;
+}
+.hero .text{
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 /*=============================MEDIA=================================*/
 @media screen and (min-width:768px) {
   .mobile-only{
@@ -242,7 +260,6 @@ header .s-trigger i.ri-close-line, .showsearch header .s-trigger i.ri-search-lin
     color: var(--primary-color);
   }
 }
-/*==============================================================*/
 /*==============================================================*/
 /*==============================================================*/
 /*==============================================================*/
