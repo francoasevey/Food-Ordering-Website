@@ -175,6 +175,31 @@ header nav .menu ul li a{
 header nav .menu ul li a:hover{
   color: var(--white-color);
 }
+/*=============================HEADER SEARCH=================================*/
+header .search{
+  background-color: var(--white-color);
+  height: 0;
+  visibility: hidden;
+  transition: height .3s, visibility .3s;
+}
+.showsearch .search{
+  height: 60px;
+  visibility: inherit;
+}
+header .search input{
+  width: 100%;
+  line-height: 60px;
+  outline: 0;
+  border: 0;
+  font-family: inherit;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: right;
+  background-color: transparent;
+}
+header .search input::placeholder{
+  color: var(--dark-color);
+}
 /*=============================MEDIA=================================*/
 @media screen and (min-width:768px) {
   .mobile-only{
@@ -202,7 +227,6 @@ header nav .menu ul li a:hover{
     color: var(--primary-color);
   }
 }
-/*==============================================================*/
 /*==============================================================*/
 /*==============================================================*/
 /*==============================================================*/
