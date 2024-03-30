@@ -262,7 +262,7 @@ main > div{
   justify-content: center;
   box-shadow: inset 0 0 0 3px var(--primary-color), 0 0 0 8px #fedc5930;
 }
-.slider .tags a{
+.slider .tags a {
   color: var(--primary-color);
 }
 .link-slide a::after{
@@ -275,6 +275,10 @@ main > div{
 }
 .link-slide a:hover::after{
   width: 100%;
+}
+.thumb-nav{
+  width: 235px;
+  padding: 5px;
 }
 /*=============================MEDIA=================================*/
 @media screen and (min-width:768px) {
