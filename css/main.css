@@ -69,6 +69,19 @@ h4{
   padding: 0;
   text-align: center;
 }
+.bg-primary, .bg-dark{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  z-index: -1;
+}
+.bg-primary{
+  background-image: url('/assets/bg-primary.svg');
+}
 /*=============================HEADER=================================*/
 header{
   position: relative;
@@ -300,6 +313,7 @@ main > div{
 .slider .thumb-nav .item h4{
   font-size: 0.9em;
   text-align: right;
+  color: var(--dark-color);
   line-height: 1.2;
   display: none;
 }
@@ -312,6 +326,9 @@ main > div{
 }
 .slider .swiper-pagination-bullet-active{
   background-color: var(--dark-color);
+}
+.hero .bg-primary{
+  height: 600px;
 }
 /*=============================MEDIA=================================*/
 @media screen and (min-width:768px) {
