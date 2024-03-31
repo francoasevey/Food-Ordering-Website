@@ -298,6 +298,16 @@ main > div{
   line-height: 1.2;
   display: none;
 }
+.slider .thumb-nav .item h4 span{
+  font-weight: 300;
+  font-size: 0.813em;
+}
+.slider .swiper-pagination{
+  position: relative;
+}
+.slider .swiper-pagination-bullet-active{
+  background-color: var(--dark-color);
+}
 /*=============================MEDIA=================================*/
 @media screen and (min-width:768px) {
   .mobile-only{
