@@ -276,9 +276,27 @@ main > div{
 .link-slide a:hover::after{
   width: 100%;
 }
-.thumb-nav{
+.slider .thumb-nav{
   width: 235px;
   padding: 5px;
+}
+.slider .thumb-nav .thumbnail{
+  width: 60px;
+  height: auto;
+  border-radius: 60px;
+  cursor: pointer;
+}
+.slider .thumb-nav .item{
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: flex-end;
+}
+.slider .thumb-nav .item h4{
+  font-size: 0.9em;
+  text-align: right;
+  line-height: 1.2;
+  display: none;
 }
 /*=============================MEDIA=================================*/
 @media screen and (min-width:768px) {
@@ -305,6 +323,20 @@ main > div{
   }
   header nav .menu ul li a:hover{
     color: var(--primary-color);
+  }
+}
+@media screen and (min-width:992px){
+  .slider .thumb-nav{
+    position: absolute;
+    right: 0;
+    bottom: 1em;
+    height: 210px;
+  }
+  :is(.slider .thumb-nav ul li){
+    height: 60px !important;
+  }
+  .slider .thumb-nav .item h4{
+    display: block;
   }
 }
 /*==============================================================*/
