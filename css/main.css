@@ -442,7 +442,33 @@ main > div{
   transform: rotate(180deg);
   bottom: -300px;
 }
-/*==============================================================*/
+/*============================TABBED PRODUCTS==================================*/
+.has-bg{
+  margin-top: 10em;
+}
+.tabbed nav{
+  position: sticky;
+  top: 0;
+  margin-bottom: 2em;
+  background-color: var(--white-color);
+  border-bottom: 1px solid var(--light-color);
+  z-index: 10;
+}
+.tabbed nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em 0;
+}
+.tabbed nav ul li{
+  margin-right: 10px;
+}
+.tabbed nav a{
+  color: var(--grey-color);
+  transition: var(--trans-co);
+}
+.tabbed nav a:hover{
+  color: var(--dark-color);
+}
 /*==============================================================*/
 /*=============================MEDIA=================================*/
 @media screen and (min-width:768px) {
