@@ -466,8 +466,14 @@ main > div{
   color: var(--grey-color);
   transition: var(--trans-co);
 }
-.tabbed nav a:hover{
+.tabbed nav a:hover, .tabbed nav li.swiper-slide-thumb-active a{
   color: var(--dark-color);
+}
+.tabbed nav li:not(.swiper-slide-thumb-active) a::after{
+  opacity: 0;
+}
+.tabbed nav li a:hover::after{
+  opacity: 1;
 }
 .tabbed .products ul{
   display: grid;
@@ -539,6 +545,9 @@ main > div{
 }
 .products .meta .like:hover{
   background-color: var(--dark-color);
+}
+.tabbed nav ul li{
+  width: fit-content !important;
 }
 /*==============================================================*/
 /*=============================MEDIA=================================*/
