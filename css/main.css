@@ -469,6 +469,41 @@ main > div{
 .tabbed nav a:hover{
   color: var(--dark-color);
 }
+.tabbed .products ul{
+  display: grid;
+  grid-gap: 3em;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+.products .thumbnail{
+  position: relative;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+.products .thumbnail img{
+  transition: transform .3s .1s;
+}
+.products .thumbnail:hover img{
+  transform: scale(1.1) translateY(-10px);
+}
+.products .meta{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.products .meta .cat a{
+  font-size: 0.813em;
+}
+.products .meta :where(.catrate, .buttons){
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.products .meta .catrate i{
+  color: var(--primary-color);
+}
+
 /*==============================================================*/
 /*=============================MEDIA=================================*/
 @media screen and (min-width:768px) {
