@@ -82,6 +82,9 @@ h4{
 .bg-primary{
   background-image: url('/assets/bg-primary.svg');
 }
+.bg-dark{
+  background-image: url('/assets/bg-dark.svg');
+}
 .head-brief{
   max-width: 600px;
   text-align: center;
@@ -549,6 +552,24 @@ main > div{
 .tabbed nav ul li{
   width: fit-content !important;
 }
+/*=============================MASTERPIECE=================================*/
+.masterpiece{
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+.masterpiece .bg-dark{
+  top: -350px;
+  height: 350px;
+}
+.masterpiece .container{
+  overflow: hidden;
+}
+.masterpiece .item{
+  padding: 5em 0;
+}
+/*==============================================================*/
+/*==============================================================*/
+/*==============================================================*/
 /*==============================================================*/
 /*=============================MEDIA=================================*/
 @media screen and (min-width:768px) {
@@ -575,6 +596,16 @@ main > div{
   }
   header nav .menu ul li a:hover{
     color: var(--primary-color);
+  }
+  .masterpiece .item{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .masterpiece .item > div{
+    flex: 1 0 50%;
+  }
+  .masterpiece .item:nth-child(even){
+    flex-direction: row-reverse;
   }
 }
 @media screen and (min-width:992px){
