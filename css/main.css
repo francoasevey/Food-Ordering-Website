@@ -567,6 +567,43 @@ main > div{
 .masterpiece .item{
   padding: 5em 0;
 }
+.masterpiece .item .image{
+  margin: 0 auto;
+  height: fit-content;
+  border-radius: 50%;
+}
+.masterpiece .item:nth-child(1) .image{
+  max-width: 300px;
+  box-shadow: inset 0 0 0 4px var(--primary-color),
+  0 0 0 5px var(--primary-color),
+  0 0 0 30px #fedc5926;
+}
+.masterpiece .item:nth-child(2) .image{
+  filter: drop-shadow(0 30px 23px #000000);
+}
+.masterpiece .item:nth-child(3) .image{
+  max-width: 600px;
+  filter: drop-shadow(0 30px 23px #00000033);
+}
+.masterpiece .item:nth-child(4) .image{
+  max-width: 250px;
+  margin-left: 4em;
+  padding: 5px;
+  box-shadow: inset 0 0 0 5px var(--secondary-color),
+  0 0 0 10px #ff25254d,
+  0 0 0 25px #ff25252e;
+}
+.masterpiece .item .text{
+  padding: 3em 0 0 5em;
+}
+.masterpiece .item .text h2{
+  font-weight: 300;
+  width: fit-content;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  padding: 0.25em 0.5em;
+  border-radius: 10px;
+}
 /*==============================================================*/
 /*==============================================================*/
 /*==============================================================*/
@@ -606,6 +643,10 @@ main > div{
   }
   .masterpiece .item:nth-child(even){
     flex-direction: row-reverse;
+  }
+  .masterpiece .item:nth-child(5){
+    max-width: 80%;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width:992px){
